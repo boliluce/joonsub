@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shopAccent"
+    tools:context="com.gyeongran.joonsub.sample.IntroActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JOONSUB"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/galleryEdgeEffect"
+        android:layout_gravity="center|center_horizontal"/>
+
+    <Button
+        android:id="@+id/retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        android:layout_marginBottom="50dp"
+        android:text="다시시도"
+        android:textSize="30dp"
+        android:background="@color/galleryEdgeEffect"
+        android:layout_gravity="bottom|center_horizontal"
+        android:visibility="gone"/>
+
+
+</FrameLayout>

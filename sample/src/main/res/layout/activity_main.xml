@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yarolegovich.mp.MaterialPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yarolegovich.discretescrollview.sample.com.gyeongran.discretescrollview.sample.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <Spinner
+        android:id="@+id/bluetooth_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"/>
+
+    <Spinner
+        android:id="@+id/PlantType_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"/>
+
+    <!--<Spinner
+        android:id="@+id/Growth_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"/>-->
+
+    <com.yarolegovich.mp.MaterialPreferenceCategory
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mpc_title="@string/card_title_preview">
+
+        <com.yarolegovich.mp.MaterialRightIconPreference
+            android:id="@+id/preview_weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mp_icon="@drawable/ic_weather_partlycloudy_black_24dp"
+            app:mp_icon_tint="@color/grayIconTint"
+            app:mp_title="@string/preview_title_small_cards" />
+
+    </com.yarolegovich.mp.MaterialPreferenceCategory>
+
+
+
+
+
+</com.yarolegovich.mp.MaterialPreferenceScreen>
